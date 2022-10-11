@@ -43,7 +43,7 @@ This command will allow you to clone our repo locally.
 
 When you are done coding something for an issue. Run: `git add .` (that period means all files, you can specify a file name if you choose) this will stage all your changes for `git commit -m "YOUR_COMMIT_MESSAGE"`.
 
-After you commit, you'll want to push your changes using `git push` - it's likely that your upstream isn't ready yet and the output of that command will tell you something like `git push --set-upstream "origin/NAME_OF_YOUR_BRANCH"`, run that and then your changes will be visibile on https://github.com/drewlearns/OS_100days.
+After you commit, you'll want to push your changes using `git push` - it's likely that your upstream isn't ready yet and the output of that command will tell you something like `git push --set-upstream origin NAME_OF_YOUR_BRANCH`, run that and then your changes will be visibile on https://github.com/drewlearns/OS_100days.
 
 ---
 
