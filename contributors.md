@@ -1,6 +1,8 @@
 # Contributors
 For assistance reach out on discord on the #OS_100Days channel ([https://discord.gg/AntJA73Qx2](https://discord.gg/AntJA73Qx2)). 
 
+Last updated at: 10/12/2022
+
 ## OS_100Days ( NAME IS A WIP )
 
 ### How to contribute
