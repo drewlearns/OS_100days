@@ -17,6 +17,7 @@ Join me, Drew Karriker and friends, at [https://discord.gg/AntJA73Qx2](https://d
 
 * Do a fresh `git pull` or if you haven't already `git clone git@github.com:drewlearns/OS_100days.git"
 * `cd OS_100days`
+* `npm i` installs all npm packages locally
 * `npm start`
 * Open your browser to localhost:3000
 
