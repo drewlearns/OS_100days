@@ -1,45 +1,39 @@
-<%- include('partials/head.ejs') %>
-<%- include('partials/navbar.ejs') %>
+<%- include('partials/head.ejs') %> <%- include('partials/navbar.ejs') %>
 
-	<main>
-		<section class="profile">
-			<div class="container">
-				<h3 class="bold">USERNAME:</h3>
-				<p class="user-details"></p>
-				<h3 class="bold">CURRENT CHALLENGE:</h3>
-				<p class="user-details"></p>
-				<h3 class="bold">CHALLENGE DURATION:</h3>
-				<p class="user-details"></p>
-				<h3 class="bold">NO. OF REPO'S WORKED ON:</h3>
-				<p class="user-details"></p>
-				<div class="progress-bar"></div>
-			</div>
-		</section>
-		<section class="Calendar">
-			<!-- SHOULD CONTAIN CALENDAR WHICH CIRCLES CURRENT DATE AND MARKS DATE WITH GIT COMMITS GREEN  -->
-		</section>
+<main>
+  <section class="profile">
+    <h3 class="bold">USERNAME:</h3>
+    <p class="user-details"></p>
+    <h3 class="bold">CURRENT CHALLENGE:</h3>
+    <p class="user-details"></p>
+    <h3 class="bold">CHALLENGE DURATION:</h3>
+    <p class="user-details"></p>
+    <h3 class="bold">NO. OF REPO'S WORKED ON:</h3>
+    <p class="user-details"></p>
+    <div class="progress-bar"></div>
+  </section>
+  <section class="Calendar">
+    <!-- SHOULD CONTAIN CALENDAR WHICH CIRCLES CURRENT DATE AND MARKS DATE WITH GIT COMMITS GREEN  -->
+  </section>
 
-		<section class="Repos">
-			<div class="container">
-				<div class="repo-header">
-					<p>REPO NAME</p>
-					<p>STATUS</p>
-				</div>
-				<div class="repo-body">
-					<!--  WOULD CONTAIN REPO USER IS CURRENTLY WORKING ON AND THE STATUS OF THE REPO(WHICH WOULD BE DETERMINED BY THE USER)
+  <section class="Repos">
+    <div class="repo-header">
+      <p>REPO NAME</p>
+      <p>STATUS</p>
+      <div class="repo-body">
+        <!--  WOULD CONTAIN REPO USER IS CURRENTLY WORKING ON AND THE STATUS OF THE REPO(WHICH WOULD BE DETERMINED BY THE USER)
 						SHOULD ALSO CONTAIN A COMPLETED BUTTON WHICH CHANGES THE REPO STATUS TO COMPLETED  -->
-				</div>
-			</div>
-			<!-- SECTION WHICH WOULD CONTAIN OPEN REPOS AND COMPLETED REPOS  -->
-		</section>
-		<section class="Progress">
-			<div class="container">
-				<h2 class="bold">DAY</h2>
-				<p class="day-num">3</p>
-				<p class="rem-days">/<span class="days">100</span> DAYS</p>
-			</div>
-			<!-- SHOULD INDICATE CURRENT DAY OF CHALLENGE  -->
-			<p class="quote"></p>
-		</section>
-	</main>
-  <%- include('partials/footer.ejs') %>
+      </div>
+    </div>
+    <!-- SECTION WHICH WOULD CONTAIN OPEN REPOS AND COMPLETED REPOS  -->
+  </section>
+  <section class="Progress">
+    <h2 class="bold">DAY</h2>
+    <p class="day-num">3</p>
+    <p class="rem-days">/<span class="days">100</span> DAYS</p>
+
+    <!-- SHOULD INDICATE CURRENT DAY OF CHALLENGE  -->
+    <p class="quote"></p>
+  </section>
+</main>
+<%- include('partials/footer.ejs') %>
