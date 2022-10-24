@@ -12,3 +12,11 @@ Well this project aims to correct that with friendly reminders, a simple way to 
 Yes, though I'm still trying to figure out what all that entails. If you have opensource experience and want to join, great! We would love to have you join our community!
 
 Join me, Drew Karriker and friends, at [https://discord.gg/AntJA73Qx2](https://discord.gg/AntJA73Qx2). Let's code!
+
+## How to run the project locally
+
+* Do a fresh `git pull` or if you haven't already `git clone git@github.com:drewlearns/OS_100days.git"
+* `cd OS_100days`
+* `npm start`
+* Open your browser to localhost:3000
+
