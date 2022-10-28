@@ -6,6 +6,8 @@
     "start": "nodemon ./bin/www"
   },
   "dependencies": {
+    "bootstrap": "^5.2.2",
+    "bootstrap-icons": "^1.9.1",
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
     "ejs": "~3.1.7",
