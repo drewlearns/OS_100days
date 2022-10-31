@@ -6,9 +6,6 @@ const domain = `OS_100Days`;
 router.get("/", function (req, res, next) {
   res.render("index", { title: `${domain} | Home` });
 });
-router.get("/faq", function (req, res, next) {
-  res.render("faq", { title: `${domain} | FAQ` });
-});
 router.get("/about", function (req, res, next) {
   res.render("about", { title: `${domain} | About` });
 });

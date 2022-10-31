@@ -1,6 +1,7 @@
 
-<%- include('partials/head.ejs') %> <%- include('partials/navbar.ejs') %>
+<%- include('partials/head.ejs') %>
 <h1><%= message %></h1>
 <h2><%= error.status %></h2>
 <pre><%= error.stack %></pre>
+<%- include('partials/sidebar.ejs') %>
 <%- include('partials/footer.ejs') %>
