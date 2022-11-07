@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "root",
+    "password": "password",
+    "database": "OS_100Days",
+    "host": "localhost",
+    "dialect": "mariadb"
+  },
+  "test": {
+    "username": "root",
+    "password": "password",
+    "database": "OS_100Days",
+    "host": "localhost",
+    "dialect": "mariadb"
+  },
+  "production": {
+    "username": "root",
+    "password": "password",
+    "database": "OS_100Days",
+    "host": "localhost",
+    "dialect": "mariadb"
+  }
+}
