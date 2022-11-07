@@ -1,6 +1,24 @@
 <%- include('partials/head.ejs') %>
-<main>
-  <section class="Sign in"></section>
-</main>
+  <!-- Main -->
+  <div class="container">
+    <h1>Log in</h1>
+    <form action="/signin/auth" method="POST" enctype="application/json">
+      <div class="control-group">
+        <div class="form-group floating-label-form-group controls">
+          <label for="username">Username</label>
+          <input type="text" class="form-control" id="username" name="username" required/>
+        </div>
+        <br />
+        <div class="form-group floating-label-form-group controls">
+          <label for="password">Password</label>
+          <input type="password" class="form-control" id="password" name="password" required/>
+        </div>
+        <br />
+        <div class="form-group">
+          <button type="submit" class btn btn-primary id="sendMessaageButton">
+            login
+          </button>
+        </div>
+  </div>
 <%- include('partials/sidebar.ejs') %>
 <%- include('partials/footer.ejs') %>
