@@ -1,11 +1,11 @@
+
 # OS_100days
 An opensource Project from CodingWithDrew.com
 
 ## About
 
-Ever do the [100daysofcode.com](https://100daysofcode.com) challenge and find yourself skipping, forgetting which day, etc?
-
-Well this project aims to correct that with friendly reminders, a simple way to keep track of what day you are on, and will allow you to tweet directly from it.  (hopefully)
+Ever done the [100daysofcode.com](https://100daysofcode.com) challenge and found yourself skipping, forgetting which day you are on, etc?
+This project aims to help you stay consistent by giving you friendly reminders, a simple way to keep track of what day you are on, and will allow you to tweet directly from it (hopefully!).
 
 ## Is it opensource?
 
@@ -15,10 +15,17 @@ Join me, Drew Karriker and friends, at [https://discord.gg/AntJA73Qx2](https://d
 
 ## How to run the project locally
 
-* Do a fresh `git pull` or if you haven't already `git clone git@github.com:drewlearns/OS_100days.git" `
-* `cd OS_100days`
-* install mariadb
-* `npm i` installs all npm packages locally
-* `npm run dev`
-* Open your browser to localhost:3000
+### Prerequisites:
 
+To set up and run a local instance of OS_100days, the following are required:
+
+- [nodejs/npm](https://www.npmjs.com/)
+- [nodemon](https://www.npmjs.com/package/nodemon): This can be installed by running `npm i -g nodemon` after nodejs and npm have been installed
+
+### Process:
+
+* Clone the project's repository by running `git clone git@github.com:drewlearns/OS_100days.git"` or run `git pull` to update your local repository if you have it cloned already.
+* `cd OS_100days`
+* Install the necessary dependencies locally via node package manager(npm) by running `npm i`
+* `npm run dev`
+* Visit `localhost:3000` on your browser
