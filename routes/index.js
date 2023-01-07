@@ -15,11 +15,15 @@ router.get("/about", function (req, res, next) {
 router.get("/signup", function (req, res, next) {
   res.render("signup", { title: `${domain} | Signup` });
 });
+
 router.get("/signin", function (req, res, next) {
-  res.render("sign in", { title: `${domain} | Sign in` });
+  res.render("signin", { title: `${domain} | Signin` });
 });
+
+
 router.get("/profile", function (req, res, next) {
   res.render("profile", { title: `${domain} | Profile` });
 });
+
 
 module.exports = router;
