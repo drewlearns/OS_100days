@@ -3,7 +3,8 @@
   <!-- Main -->
   <div class="container">
     <h1>Sign up</h1>
-    <form action="/signup/auth" method="POST" enctype="application/json">
+    <% if (typeof formError !== "undefined" && formError) { %><p class="form-error" role="alert"><%= formError %></p><% } %>
+    <form action="/signup/auth" method="POST">
       <div class="control-group">
         <div class="form-group floating-label-form-group controls">
           <label for="username">Username</label>
@@ -21,10 +22,13 @@
         </div>
         <br />
         <div class="form-group">
-          <button type="submit" class btn btn-primary id="sendMessaageButton">
+          <button type="submit" class="btn btn-primary" id="sendMessaageButton">
             Signup
           </button>
         </div>
+      </div>
+    </form>
+    <p>Already registered? <a href="/signin">Log in</a></p>
   </div>
 <%- include('partials/sidebar.ejs') %>
 <%- include('partials/footer.ejs') %>
