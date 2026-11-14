@@ -38,7 +38,10 @@ The app stores its users in a MariaDB database, so sign up and sign in only work
 The easiest way to get a matching server is Docker (any MariaDB 10.x/11.x install that you configure the same way also works):
 
 ```
-docker run -d --name os100days-mariadb -p 3306:3306   -e MARIADB_ROOT_PASSWORD=password   -e MARIADB_DATABASE=OS_100Days   mariadb:11
+docker run -d --name os100days-mariadb -p 3306:3306 \
+  -e MARIADB_ROOT_PASSWORD=password \
+  -e MARIADB_DATABASE=OS_100Days \
+  mariadb:11
 ```
 
 * `MARIADB_ROOT_PASSWORD` sets the `root` password and `MARIADB_DATABASE` creates the `OS_100Days` database on first start.
@@ -53,4 +56,4 @@ docker run -d --name os100days-mariadb -p 3306:3306   -e MARIADB_ROOT_PASSWORD=p
 * `cd OS_100days`
 * Install the necessary dependencies locally via node package manager(npm) by running `npm i`
 * Make sure the MariaDB container above is running, then start the app with `npm run dev` (or `npm start` if you did not install nodemon). Set the `PORT` environment variable to use a port other than 3000.
-* Visit `localhost:3000` on your browser and sign up for an account at `/signup`.
+* Visit `http://127.0.0.1:3000` in your browser (`localhost` can resolve to IPv6 `::1` on some machines) and sign up for an account at `/signup`.
