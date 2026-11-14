@@ -1,5 +1,39 @@
 <%- include('partials/head.ejs') %>
-<main>
-  <section class="FAQs"></section>
-</main>
+<div id="content">
+  <div class="inner">
+  <article class="box post post-excerpt" id="faqs">
+    <h2>F.A.Qs</h2>
+    <details>
+      <summary>What is OS_100Days?</summary>
+      <p>An opensource project from CodingWithDrew.com that aims to help you stay consistent with the 100daysofcode.com challenge by giving you friendly reminders and a simple way to keep track of what day you are on.</p>
+    </details>
+    <details>
+      <summary>What can I do with it today?</summary>
+      <p>You can sign up for an account, log in and see the home page. Reminders, day tracking and tweeting from the app are still goals and are not available yet.</p>
+    </details>
+    <details>
+      <summary>Do I need an account?</summary>
+      <p>Yes. Sign up with a username, an email address and a password, then log in with your username and password.</p>
+    </details>
+    <details>
+      <summary>Will it really let me tweet?</summary>
+      <p>That is the plan, hopefully, but it is not built yet.</p>
+    </details>
+    <details>
+      <summary>Is it opensource?</summary>
+      <p>Yes. The code is on GitHub at github.com/drewlearns/OS_100days, and the project is still working out what opensource collaboration involves. If you have opensource experience, you are welcome to join.</p>
+    </details>
+    <details>
+      <summary>How can I contribute or ask for help?</summary>
+      <p>Join Drew Karriker and friends on Discord (the #OS_100Days channel), or pick an issue on GitHub, comment on it and assign it to yourself. The CONTRIBUTING.md file in the repository explains the process. If you know HTML, CSS or JavaScript, this project is for you.</p>
+    </details>
+    <details>
+      <summary>How do I run it on my own computer?</summary>
+      <p>You need Node.js and npm, plus a MariaDB database. The README in the repository explains the steps.</p>
+    </details>
+  </article>
+</div>
+</div>
+
+<%- include('partials/sidebar.ejs') %>
 <%- include('partials/footer.ejs') %>

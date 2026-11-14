@@ -46,6 +46,9 @@ const pick = (messages, key) =>
 // req.body fields may be missing or non-strings (JSON bodies); normalise to a trimmed string.
 const field = (value) => (typeof value === "string" ? value.trim() : "");
 
+router.get("/faq", function (req, res, next) {
+  res.render("faq", { title: `${domain} | FAQ` });
+});
 router.get("/signup", function (req, res, next) {
   res.render("signup", {
     title: `${domain} | Signup`,
