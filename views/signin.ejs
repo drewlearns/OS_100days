@@ -2,7 +2,9 @@
   <!-- Main -->
   <div class="container">
     <h1>Log in</h1>
-    <form action="/signin/auth" method="POST" enctype="application/json">
+    <% if (typeof formNotice !== "undefined" && formNotice) { %><p class="form-notice" role="status"><%= formNotice %></p><% } %>
+    <% if (typeof formError !== "undefined" && formError) { %><p class="form-error" role="alert"><%= formError %></p><% } %>
+    <form action="/signin/auth" method="POST">
       <div class="control-group">
         <div class="form-group floating-label-form-group controls">
           <label for="username">Username</label>
@@ -15,10 +17,13 @@
         </div>
         <br />
         <div class="form-group">
-          <button type="submit" class btn btn-primary id="sendMessaageButton">
+          <button type="submit" class="btn btn-primary" id="sendMessaageButton">
             login
           </button>
         </div>
+      </div>
+    </form>
+    <p>No account yet? <a href="/signup">Sign up</a></p>
   </div>
 <%- include('partials/sidebar.ejs') %>
 <%- include('partials/footer.ejs') %>
